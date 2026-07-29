@@ -1,3 +1,6 @@
+import patient
+
+
 while True:
     print(".....EHR_Nexus.......")
 
@@ -16,6 +19,7 @@ while True:
     choice = int(input("enter your choice:"))
     if choice == 1:
         print("ADD Patient Feature Selected ")
+        patient.add_patient()
     elif choice == 2:
         print("View Patient Feature Selected ")
     elif choice == 3:
