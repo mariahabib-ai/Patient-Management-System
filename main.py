@@ -19,23 +19,23 @@ while True:
     choice = int(input("enter your choice:"))
     if choice == 1:
         print("ADD Patient Feature Selected ")
-        patient.add_patient()
+        patient_management.add_patient()
     elif choice == 2:
         print("View Patient Feature Selected ")
-        patient.view_patients()
+        patient_management.view_patients()
     elif choice == 3:
         print("Search Patient Feature Selected ")
-        patient.search_patient()
+        patient_management.search_patient()
     elif choice == 4:
          print("Add Medical Visit Feature Selected ")
     elif choice == 5:
         print("View Medical History Feature Selected ")
     elif choice == 6:
         print("Update Patient Record Feature Selected ")
-        patient.update_patient()
+        patient_management.update_patient()
     elif choice == 7:
         print("Delete Patient Feature Selected ")
-        patient.delete_patient()
+        patient_management.delete_patient()
     elif choice == 8:
         print("Exiting...")
         break
