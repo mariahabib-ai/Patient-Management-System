@@ -1,3 +1,6 @@
+import  patient_management
+
+
 while True:
     print(".....EHR_Nexus.......")
 
@@ -13,23 +16,35 @@ while True:
     print("................................")
 
     print("\nWhich service do you need?")
-    choice = int(input("enter your choice:"))
+
+    try:
+        choice = int(input("enter your choice:"))
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        continue
+
     if choice == 1:
         print("ADD Patient Feature Selected ")
+        patient_management.add_patient()
     elif choice == 2:
         print("View Patient Feature Selected ")
+        patient_management.view_patients()
     elif choice == 3:
         print("Search Patient Feature Selected ")
+        patient_management.search_patient()
     elif choice == 4:
          print("Add Medical Visit Feature Selected ")
     elif choice == 5:
         print("View Medical History Feature Selected ")
     elif choice == 6:
         print("Update Patient Record Feature Selected ")
+        patient_management.update_patient()
     elif choice == 7:
         print("Delete Patient Feature Selected ")
+        patient_management.delete_patient()
     elif choice == 8:
         print("Exiting...")
         break
     else:
         print("Invalid choice. Please try again.")
+
