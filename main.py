@@ -16,7 +16,13 @@ while True:
     print("................................")
 
     print("\nWhich service do you need?")
-    choice = int(input("enter your choice:"))
+
+    try:
+        choice = int(input("enter your choice:"))
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        continue
+
     if choice == 1:
         print("ADD Patient Feature Selected ")
         patient_management.add_patient()
