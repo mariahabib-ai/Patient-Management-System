@@ -1,0 +1,2 @@
+# No external dependencies required
+# EHR Nexus uses Python standard library modules only
