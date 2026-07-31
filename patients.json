@@ -1,0 +1,26 @@
+[
+    {
+        "Patient ID": "1001",
+        "Full Name": "maria habaib",
+        "Date Of Birth": "2-june-2003",
+        "Gender": "020029828",
+        "Blood Group": "b",
+        "Contact Number": "02222",
+        "Email": "maria@gmail.com",
+        "Address": "lahore",
+        "Emergency Contact": "02928",
+        "Registered Date": "28i"
+    },
+    {
+        "Patient ID": "1002",
+        "Full Name": "ali",
+        "Date Of Birth": "ss",
+        "Gender": "ss",
+        "Blood Group": "ss",
+        "Contact Number": "s",
+        "Email": "s",
+        "Address": "ss",
+        "Emergency Contact": "s",
+        "Registered Date": "s"
+    }
+]
