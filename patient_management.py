@@ -93,7 +93,7 @@ def view_patients():
             print("Address:", patient["Address"])
             print("Emergency Contact:", patient["Emergency Contact"])
             print("Registered Date:", patient["Registered Date"])
-            
+            ``
             print("\n----------------------\n")
 
 def search_patient():
