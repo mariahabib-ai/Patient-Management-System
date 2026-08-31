@@ -1,100 +1,124 @@
-# EHR Nexus
+# Patient Management System
 
-## Overview
-EHR Nexus is an Electronic Health Record (EHR) platform designed to enable connected healthcare by providing a unified approach to managing and organizing healthcare information.
+## What It Does
 
-The platform focuses on improving collaboration between healthcare organizations by supporting structured health data management and creating a foundation for seamless healthcare workflows.
+The **Patient Management System** is a Python-based command-line application for managing basic patient records.
 
-Currently, EHR Nexus is in the prototype development phase, with the first implemented module being Patient Management. This module provides the foundation for future expansion of the system.
-
+It allows users to create, view, search, update, and delete patient information. Patient records are stored in a structured JSON file.
 
 ---
 
-## Current Implemented Module
+## Problem
 
-### Patient Management Module
+Managing patient information manually can make it difficult to organize, find, and update records efficiently.
 
-The current version of EHR Nexus provides a command-line-based patient management system that allows users to manage basic patient records.
-
-The module focuses on creating, storing, retrieving, updating, and managing patient information using structured data handling.
+This project provides a simple structured system for managing patient records and demonstrates the basic workflow of digital patient information management.
 
 ---
 
-## Current Features
+## Features
 
-- Add new patient records
-- View patient records
-- Search patient records
-- Update patient information
-- Delete patient records
-- JSON-based patient data storage
-- Data validation for required fields
-- Modular code organization
-
----
-
-## Technologies Used
-
-- Python 3
-- JSON for data storage
-- Git & GitHub for version control
+* Add new patient records
+* View patient records
+* Search patients by Patient ID
+* Update patient information
+* Delete patient records
+* Prevent duplicate Patient IDs
+* Validate required fields
+* Store patient data in JSON
+* Handle missing or corrupted JSON files
+* Modular code organization
 
 ---
 
-## How to Run
+## Workflow
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/mariahabib-ai/EHR_Nexus.git
-```
-
-### 2. Navigate to project directory
-
-```bash
-cd EHR_Nexus
-```
-
-### 3. Run the application
-
-```bash
-python main.py
+```text
+Start Application
+       ↓
+Main Menu
+       ↓
+Select Operation
+       ↓
+Add / View / Search / Update / Delete
+       ↓
+Validate Input
+       ↓
+Load Patient Data
+       ↓
+Perform Operation
+       ↓
+Save Changes to JSON
+       ↓
+Display Result
 ```
 
 ---
 
 ## Project Structure
 
-```
-EHR_Nexus/
+```text
+Patient-Management-System/
 │
 ├── main.py
 │   └── Application entry point and menu control
 │
 ├── patient_management.py
-│   └── Patient record management operations
+│   └── Patient management operations
 │
 ├── database.py
-│   └── Data loading and saving functionality
+│   └── JSON data loading and saving
+│
+├── patients.json
+│   └── Patient records
 │
 ├── requirements.txt
 │   └── Project dependencies
 │
-├── .gitignore
-│   └── Ignored files configuration
-
+└── .gitignore
+    └── Ignored files
 ```
 
 ---
 
-## Development Status
+## Technologies
 
-EHR Nexus is currently under active development.
+* **Python 3** — Application development
+* **JSON** — Patient data storage
+* **Git** — Version control
+* **GitHub** — Repository hosting
 
-The current prototype represents the first foundation of a larger healthcare software platform, with future development focused on expanding healthcare management capabilities.
+---
+
+## How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/mariahabib-ai/Patient-Management-System.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd Patient-Management-System
+```
+
+### 3. Run the Application
+
+```bash
+python main.py
+```
+
+The application will start in the terminal and display the patient management menu.
 
 ---
 
 ## Author
 
-Maria Habib
+**Maria Habib**
+
+BS Artificial Intelligence
+University of Management and Technology
+
+**AI Developer Bootcamp — Project**
